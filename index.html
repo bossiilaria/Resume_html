@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+    <title>c0diboss1_resume</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/reset.css"/> 
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Open+Sans:400,600,300,800,700,400italic|PT+Serif:400,400italic"/>
+  
+</head>
+    <body>
+        <div id="container">
+            <div id="content" >
+                <div class="menu">
+                	<ul class="tabs">
+                    	<li><a href="#profile" class="profile-tab">Profile</a></li>
+                    	<li><a href="#resume" class="resume-tab">Resume</a></li>
+                    	<li><a href="#portfolio" class="portfolio-tab">Portfolio</a></li>
+                    	<li><a href="#connect" class="connect-tab">Connect</a></li>
+                    </ul>
+                </div>
+
+                <div id="profile"> 
+                	<div class="about">
+                    	<div class="profile-photo"><img src="img/tango.jpg" width="250" height="200"/></div>
+                        <h1>ILARIA BOSSI</h1>
+                        <h3><i>Front End Developer</i></h3>
+                     
+                    </div>
+
+					
+                	<ul class="basic-info">
+					<li><h3>BASIC INFO </h3></li>
+						<li><label>Name</label><span>Ilaria Bossi</span></li>
+                        <li><label>Address</label><span>New York, NY</span></li>
+                        <li><label>Phone</label><span>+1 619 972 1118</span></li>
+						<li><label>Email</label><span>c0diboss1@gmail.com</span></li>
+                        <li><label>Website</label><span>www.c0diboss1.com</span></li>
+                    </ul>
+                </div>        
+
+
+                <div id="resume">
+                	 <div class="resume-section">  
+                        <h3 class="main-heading">Educational Background</h3>   
+                         <ul class="date">
+                            <li>            
+                                <div class="date-box">
+                                    <h4>SDSU <span class="date-range">2000 - 2003</span></h4>
+                                     <h3>MS in Physics<span class="date-range"></span></h3>
+                                    <h5>San Diego, CA</h5>
+                                </div>
+                            </li>
+                              <li>            
+                            </li>
+                            <div class="clear"></div>
+                        </ul> 
+   
+						
+						<h3 class="main-heading">Employment History</h3>   
+                         <ul class="date">
+                            <li>            
+                                <div class="date-box">
+                                    <h4>Quantum Design<span class="date-range">2001 - 2006</span></h4>
+                                    <h3>Engineer<span class="date-range"></span></h3>
+                                    <h5>San Diego, CA</h5>
+                                </div>
+                            </li>
+                              <li>            
+                                <div class="date-box">
+                                    <h4>Transperfect.com<span class="date-range">2006 - 2015</span></h4>
+                                    <h3>Language Lead<span class="date-range"></span></h3>
+                                    <h5>New York City, USA</h5>
+                                </div>
+                            </li>
+                        </ul>    
+                    </div>
+					
+					
+                    <div class="skills-section">
+                        <h3 class="main-heading"><span>Technical Skills</span></h3> 
+                        <ul class="skills">
+                            <li> <h4>HTML5</h4></li>
+                            <li> <h4>CSS3</h4></li>
+                            <li> <h4>Bootstrap 3</h4></li>
+                            <li> <h4>jQuery</h4> </li>
+                            <li> <h4>JavaScript</h4> </li>
+						</ul>
+                     </div>
+                </div>
+
+                <div id="portfolio">
+                    <div class="heading">My Latest Projects</div>
+                    <ul id="portfolios">
+                        <li>
+                            <a href="#">
+                                <img src="img/bubble_general.png">
+                                <span class="desc">Recreating a PSD</span> 
+                            </a>
+                    	</li>
+                        <li>
+                              <a href="#">
+                                <img src="img/yogila.png">
+                                <span class="desc">Multi-Page Responsive Website</span> 
+                            </a>
+                    	</li>                        
+                        <li>
+                             <a href="#">
+                                <img src="img/tango.png">
+                                <span class="desc">One-Page Portfolio</span> 
+                            </a>
+                    	</li>
+                        <li>
+                             <a href="#">
+                                <img src="img/tempus.png">
+                                <span class="desc">Simple JavaScript Project</span> 
+                            </a>
+                    	</li>
+                        
+                    </ul>
+                </div>
+
+				
+                <div id="connect">
+                     <div class="contact-form">
+                        <h3 class="main-heading"><span>Connect</span></h3>
+                        <form action="" id="connectform">
+                            <p>
+                            	<label for="name">Name</label> <input type="text" name="name" class="input" >
+                            </p>
+                            <p>
+                            	<label for="email">Email</label> <input type="text" name="email" class="input">
+                            </p>
+                            <p>
+                            	<label for="message">Message</label> <textarea name="message" cols="50" rows="6" class="textarea" ></textarea>
+                            </p>
+                            <input type="submit" name="submit" value="Send Now" class="submit">
+                        </form>
+                    </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+<script>
+		jQuery(document).ready(function(){ 
+			var $content 		= $("#content");
+			$content.easytabs({
+			  animate			: true,
+			  transitionIn		:'slideDown',
+			  transitionOut		:'slideUp',
+			  animationSpeed	:500,
+			  tabs				:"> .menu > ul > li",
+			  tabActiveClass	:'active',
+			});
+		});	
+</script>	
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery.easytabs.min.js"></script>   
+    </body>
+	</html>
